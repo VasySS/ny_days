@@ -1,4 +1,4 @@
-let cur = new Date()
-let ny = new Date(cur.getFullYear()+1, 0, 1)
+import { getDaysToNY } from "./method.js"
 
-console.log((ny.getTime()- cur.getTime())/86_400_000)
+let cur = new Date()
+console.log(getDaysToNY(cur))
